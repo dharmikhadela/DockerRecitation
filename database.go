@@ -11,7 +11,7 @@ import (
 var db *sql.DB // Declare a pointer to a sql db
 
 func InitDatabase() {
-	dbHostname := "localhost"
+	dbHostname := "postgres"
 	dbName := os.Getenv("LOCAL_DB")
 	dbUser := os.Getenv("LOCAL_DB_USER")
 	dbPassword := os.Getenv("LOCAL_DB_PASSWORD")
